@@ -7,50 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02DFAD4419EE9C0C00AC8DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD4319EE9C0C00AC8DA3 /* main.m */; };
-		02DFAD4719EE9C0C00AC8DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD4619EE9C0C00AC8DA3 /* AppDelegate.m */; };
-		02DFAD4A19EE9C0C00AC8DA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD4919EE9C0C00AC8DA3 /* ViewController.m */; };
-		02DFAD4D19EE9C0C00AC8DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD4B19EE9C0C00AC8DA3 /* Main.storyboard */; };
-		02DFAD4F19EE9C0C00AC8DA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD4E19EE9C0C00AC8DA3 /* Images.xcassets */; };
-		02DFAD5219EE9C0C00AC8DA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD5019EE9C0C00AC8DA3 /* LaunchScreen.xib */; };
-		02DFAD5E19EE9C0C00AC8DA3 /* ZBTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD5D19EE9C0C00AC8DA3 /* ZBTableViewTests.m */; };
+		02DFAD6919EE9C8C00AC8DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD6819EE9C8C00AC8DA3 /* AppDelegate.m */; };
+		02DFAD6C19EE9C9400AC8DA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD6B19EE9C9400AC8DA3 /* ViewController.m */; };
+		02DFAD6E19EE9CA000AC8DA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD6D19EE9CA000AC8DA3 /* Images.xcassets */; };
+		02DFAD7219EE9CD000AC8DA3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD7019EE9CD000AC8DA3 /* Info.plist */; };
+		02DFAD7319EE9CD000AC8DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD7119EE9CD000AC8DA3 /* main.m */; };
+		02DFAD7F19EE9CF800AC8DA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD7B19EE9CF800AC8DA3 /* LaunchScreen.xib */; };
+		02DFAD8019EE9CF800AC8DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD7D19EE9CF800AC8DA3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		02DFAD5819EE9C0C00AC8DA3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 02DFAD3619EE9C0C00AC8DA3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 02DFAD3D19EE9C0C00AC8DA3;
-			remoteInfo = ZBTableView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02DFAD3E19EE9C0C00AC8DA3 /* ZBTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		02DFAD4219EE9C0C00AC8DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02DFAD4319EE9C0C00AC8DA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		02DFAD4519EE9C0C00AC8DA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		02DFAD4619EE9C0C00AC8DA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		02DFAD4819EE9C0C00AC8DA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		02DFAD4919EE9C0C00AC8DA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		02DFAD4C19EE9C0C00AC8DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02DFAD4E19EE9C0C00AC8DA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		02DFAD5119EE9C0C00AC8DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		02DFAD5719EE9C0C00AC8DA3 /* ZBTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02DFAD5C19EE9C0C00AC8DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02DFAD5D19EE9C0C00AC8DA3 /* ZBTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTableViewTests.m; sourceTree = "<group>"; };
+		02DFAD6719EE9C8C00AC8DA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ZBTableViewDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		02DFAD6819EE9C8C00AC8DA3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ZBTableViewDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		02DFAD6A19EE9C9400AC8DA3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ZBTableViewDemo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		02DFAD6B19EE9C9400AC8DA3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ZBTableViewDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
+		02DFAD6D19EE9CA000AC8DA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ZBTableViewDemo/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		02DFAD7019EE9CD000AC8DA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ZBTableViewDemo/Info.plist; sourceTree = SOURCE_ROOT; };
+		02DFAD7119EE9CD000AC8DA3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ZBTableViewDemo/main.m; sourceTree = SOURCE_ROOT; };
+		02DFAD7C19EE9CF800AC8DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ZBTableViewDemo/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		02DFAD7E19EE9CF800AC8DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ZBTableViewDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		02DFAD3B19EE9C0C00AC8DA3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02DFAD5419EE9C0C00AC8DA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,8 +43,8 @@
 		02DFAD3519EE9C0C00AC8DA3 = {
 			isa = PBXGroup;
 			children = (
-				02DFAD4019EE9C0C00AC8DA3 /* ZBTableView */,
-				02DFAD5A19EE9C0C00AC8DA3 /* ZBTableViewTests */,
+				02DFAD8219EE9EE900AC8DA3 /* ZBTableView */,
+				02DFAD4019EE9C0C00AC8DA3 /* ZBTableViewDemo */,
 				02DFAD3F19EE9C0C00AC8DA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,50 +53,40 @@
 			isa = PBXGroup;
 			children = (
 				02DFAD3E19EE9C0C00AC8DA3 /* ZBTableView.app */,
-				02DFAD5719EE9C0C00AC8DA3 /* ZBTableViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02DFAD4019EE9C0C00AC8DA3 /* ZBTableView */ = {
+		02DFAD4019EE9C0C00AC8DA3 /* ZBTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				02DFAD4519EE9C0C00AC8DA3 /* AppDelegate.h */,
-				02DFAD4619EE9C0C00AC8DA3 /* AppDelegate.m */,
-				02DFAD4819EE9C0C00AC8DA3 /* ViewController.h */,
-				02DFAD4919EE9C0C00AC8DA3 /* ViewController.m */,
-				02DFAD4B19EE9C0C00AC8DA3 /* Main.storyboard */,
-				02DFAD4E19EE9C0C00AC8DA3 /* Images.xcassets */,
-				02DFAD5019EE9C0C00AC8DA3 /* LaunchScreen.xib */,
+				02DFAD6719EE9C8C00AC8DA3 /* AppDelegate.h */,
+				02DFAD6819EE9C8C00AC8DA3 /* AppDelegate.m */,
+				02DFAD6A19EE9C9400AC8DA3 /* ViewController.h */,
+				02DFAD6B19EE9C9400AC8DA3 /* ViewController.m */,
+				02DFAD6D19EE9CA000AC8DA3 /* Images.xcassets */,
+				02DFAD7B19EE9CF800AC8DA3 /* LaunchScreen.xib */,
+				02DFAD7D19EE9CF800AC8DA3 /* Main.storyboard */,
 				02DFAD4119EE9C0C00AC8DA3 /* Supporting Files */,
 			);
+			name = ZBTableViewDemo;
 			path = ZBTableView;
 			sourceTree = "<group>";
 		};
 		02DFAD4119EE9C0C00AC8DA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				02DFAD4219EE9C0C00AC8DA3 /* Info.plist */,
-				02DFAD4319EE9C0C00AC8DA3 /* main.m */,
+				02DFAD7019EE9CD000AC8DA3 /* Info.plist */,
+				02DFAD7119EE9CD000AC8DA3 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		02DFAD5A19EE9C0C00AC8DA3 /* ZBTableViewTests */ = {
+		02DFAD8219EE9EE900AC8DA3 /* ZBTableView */ = {
 			isa = PBXGroup;
 			children = (
-				02DFAD5D19EE9C0C00AC8DA3 /* ZBTableViewTests.m */,
-				02DFAD5B19EE9C0C00AC8DA3 /* Supporting Files */,
 			);
-			path = ZBTableViewTests;
-			sourceTree = "<group>";
-		};
-		02DFAD5B19EE9C0C00AC8DA3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				02DFAD5C19EE9C0C00AC8DA3 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = ZBTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,24 +109,6 @@
 			productReference = 02DFAD3E19EE9C0C00AC8DA3 /* ZBTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		02DFAD5619EE9C0C00AC8DA3 /* ZBTableViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 02DFAD6419EE9C0C00AC8DA3 /* Build configuration list for PBXNativeTarget "ZBTableViewTests" */;
-			buildPhases = (
-				02DFAD5319EE9C0C00AC8DA3 /* Sources */,
-				02DFAD5419EE9C0C00AC8DA3 /* Frameworks */,
-				02DFAD5519EE9C0C00AC8DA3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				02DFAD5919EE9C0C00AC8DA3 /* PBXTargetDependency */,
-			);
-			name = ZBTableViewTests;
-			productName = ZBTableViewTests;
-			productReference = 02DFAD5719EE9C0C00AC8DA3 /* ZBTableViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +120,6 @@
 				TargetAttributes = {
 					02DFAD3D19EE9C0C00AC8DA3 = {
 						CreatedOnToolsVersion = 6.0.1;
-					};
-					02DFAD5619EE9C0C00AC8DA3 = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 02DFAD3D19EE9C0C00AC8DA3;
 					};
 				};
 			};
@@ -189,7 +137,6 @@
 			projectRoot = "";
 			targets = (
 				02DFAD3D19EE9C0C00AC8DA3 /* ZBTableView */,
-				02DFAD5619EE9C0C00AC8DA3 /* ZBTableViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02DFAD4D19EE9C0C00AC8DA3 /* Main.storyboard in Resources */,
-				02DFAD5219EE9C0C00AC8DA3 /* LaunchScreen.xib in Resources */,
-				02DFAD4F19EE9C0C00AC8DA3 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02DFAD5519EE9C0C00AC8DA3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				02DFAD6E19EE9CA000AC8DA3 /* Images.xcassets in Resources */,
+				02DFAD7F19EE9CF800AC8DA3 /* LaunchScreen.xib in Resources */,
+				02DFAD7219EE9CD000AC8DA3 /* Info.plist in Resources */,
+				02DFAD8019EE9CF800AC8DA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,45 +160,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02DFAD4A19EE9C0C00AC8DA3 /* ViewController.m in Sources */,
-				02DFAD4719EE9C0C00AC8DA3 /* AppDelegate.m in Sources */,
-				02DFAD4419EE9C0C00AC8DA3 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		02DFAD5319EE9C0C00AC8DA3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				02DFAD5E19EE9C0C00AC8DA3 /* ZBTableViewTests.m in Sources */,
+				02DFAD6919EE9C8C00AC8DA3 /* AppDelegate.m in Sources */,
+				02DFAD7319EE9CD000AC8DA3 /* main.m in Sources */,
+				02DFAD6C19EE9C9400AC8DA3 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		02DFAD5919EE9C0C00AC8DA3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 02DFAD3D19EE9C0C00AC8DA3 /* ZBTableView */;
-			targetProxy = 02DFAD5819EE9C0C00AC8DA3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		02DFAD4B19EE9C0C00AC8DA3 /* Main.storyboard */ = {
+		02DFAD7B19EE9CF800AC8DA3 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02DFAD4C19EE9C0C00AC8DA3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		02DFAD5019EE9C0C00AC8DA3 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02DFAD5119EE9C0C00AC8DA3 /* Base */,
+				02DFAD7C19EE9CF800AC8DA3 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		02DFAD7D19EE9CF800AC8DA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02DFAD7E19EE9CF800AC8DA3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -343,7 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ZBTableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZBTableViewDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,43 +278,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ZBTableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZBTableViewDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		02DFAD6519EE9C0C00AC8DA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZBTableViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZBTableView.app/ZBTableView";
-			};
-			name = Debug;
-		};
-		02DFAD6619EE9C0C00AC8DA3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZBTableViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZBTableView.app/ZBTableView";
 			};
 			name = Release;
 		};
@@ -410,14 +301,6 @@
 			buildConfigurations = (
 				02DFAD6219EE9C0C00AC8DA3 /* Debug */,
 				02DFAD6319EE9C0C00AC8DA3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		02DFAD6419EE9C0C00AC8DA3 /* Build configuration list for PBXNativeTarget "ZBTableViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				02DFAD6519EE9C0C00AC8DA3 /* Debug */,
-				02DFAD6619EE9C0C00AC8DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
