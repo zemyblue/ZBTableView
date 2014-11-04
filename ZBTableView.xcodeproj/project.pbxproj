@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0231B9A619F35F9B00DF8BBB /* ZBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0231B9A519F35F9B00DF8BBB /* ZBTableView.m */; };
 		0240708B1A09124D00AD8379 /* ZBTableFetchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0240708A1A09124D00AD8379 /* ZBTableFetchView.m */; };
+		0240708D1A0920F000AD8379 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0240708C1A0920F000AD8379 /* README.md */; };
+		0240708F1A0920F600AD8379 /* ZBTableView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0240708E1A0920F600AD8379 /* ZBTableView.podspec */; };
+		024070911A09213000AD8379 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 024070901A09213000AD8379 /* LICENSE */; };
 		02DFAD6919EE9C8C00AC8DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD6819EE9C8C00AC8DA3 /* AppDelegate.m */; };
 		02DFAD6C19EE9C9400AC8DA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAD6B19EE9C9400AC8DA3 /* ViewController.m */; };
 		02DFAD6E19EE9CA000AC8DA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DFAD6D19EE9CA000AC8DA3 /* Images.xcassets */; };
@@ -22,6 +25,9 @@
 		0231B9A519F35F9B00DF8BBB /* ZBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTableView.m; sourceTree = "<group>"; };
 		024070891A09124D00AD8379 /* ZBTableFetchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTableFetchView.h; sourceTree = "<group>"; };
 		0240708A1A09124D00AD8379 /* ZBTableFetchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTableFetchView.m; sourceTree = "<group>"; };
+		0240708C1A0920F000AD8379 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0240708E1A0920F600AD8379 /* ZBTableView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text; path = ZBTableView.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		024070901A09213000AD8379 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		02DFAD3E19EE9C0C00AC8DA3 /* ZBTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DFAD6719EE9C8C00AC8DA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ZBTableViewDemo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		02DFAD6819EE9C8C00AC8DA3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ZBTableViewDemo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -83,6 +89,9 @@
 			children = (
 				02DFAD7019EE9CD000AC8DA3 /* Info.plist */,
 				02DFAD7119EE9CD000AC8DA3 /* main.m */,
+				0240708C1A0920F000AD8379 /* README.md */,
+				0240708E1A0920F600AD8379 /* ZBTableView.podspec */,
+				024070901A09213000AD8379 /* LICENSE */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,7 +166,9 @@
 			files = (
 				02DFAD6E19EE9CA000AC8DA3 /* Images.xcassets in Resources */,
 				02DFAD7F19EE9CF800AC8DA3 /* LaunchScreen.xib in Resources */,
+				0240708F1A0920F600AD8379 /* ZBTableView.podspec in Resources */,
 				02DFAD8019EE9CF800AC8DA3 /* Main.storyboard in Resources */,
+				024070911A09213000AD8379 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0240708D1A0920F000AD8379 /* README.md in Sources */,
 				0240708B1A09124D00AD8379 /* ZBTableFetchView.m in Sources */,
 				02DFAD6919EE9C8C00AC8DA3 /* AppDelegate.m in Sources */,
 				02DFAD7319EE9CD000AC8DA3 /* main.m in Sources */,

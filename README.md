@@ -1,4 +1,4 @@
 ZBTableView
 ===========
 
-This is simple tableView for pull down or pull up refresh.
+This is simple tableView that can pull down or pull up refresh.
