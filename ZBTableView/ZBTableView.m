@@ -43,7 +43,18 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
     self = [super initWithFrame:frame];
     if (self) {
         [self setShowsNoDataViewIfNeeded:YES];
-        [self setContentOffsetWhenLoaded:(CGPointZero)];
+        [self setContentOffsetWhenLoaded:CGPointZero];
+    }
+    return self;
+}
+
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setShowsNoDataViewIfNeeded:YES];
+        [self setContentOffsetWhenLoaded:CGPointZero];
     }
     return self;
 }
