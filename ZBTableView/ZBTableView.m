@@ -450,7 +450,7 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
                 sFrame.origin.y = sInsetTop;
                 [weakSelf.tableHeaderView setFrame:sFrame];
             }
-            [weakSelf setEdgeInsetTop:sInsetTop animated:NO];
+            [weakSelf setEdgeInsetTop:sInsetTop animated:YES];
             
             if (anError == nil) {
                 dispatch_async(dispatch_get_main_queue(), ^{
