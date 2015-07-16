@@ -33,6 +33,8 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
 @property (nonatomic, assign) BOOL disableFetchMore; ///< fetch more를 못하도록 막을 경우 YES
 @property (nonatomic, assign) CGFloat edgeInsetTop;
 @property (nonatomic, assign) CGFloat edgeInsetBottom;
+@property (nonatomic, assign) CGFloat edgeInsetOriginTop;
+@property (nonatomic, assign) CGFloat edgeInsetOriginBottom;
 @end
 
 
@@ -103,12 +105,29 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
     if (animated) {
         __weak typeof(self) weakSelf = self;
         [UIView animateWithDuration:0.25f animations:^{
-            [weakSelf setContentInset:edgeInsets];
+            [weakSelf setSelfContentInset:edgeInsets];
         }];
     }
     else {
-        [self setContentInset:edgeInsets];
+        [self setSelfContentInset:edgeInsets];
     }
+}
+
+
+- (void)setContentInset:(UIEdgeInsets)contentInset
+{
+    [super setContentInset:contentInset];
+    
+    // save original contentInset top and bottom.
+    _edgeInsetOriginTop = _edgeInsetTop = contentInset.top;
+    _edgeInsetOriginBottom = _edgeInsetBottom = contentInset.bottom;
+    _contentOffsetWhenLoaded = CGPointMake(0, -_edgeInsetTop);
+}
+
+
+- (void)setSelfContentInset:(UIEdgeInsets)contentInset
+{
+    [super setContentInset:contentInset];
 }
 
 
@@ -182,7 +201,7 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
     BOOL isAttachFetchView = NO;
     if ([dataSource respondsToSelector:@selector(fetchRecentWithCompletion:)]) {
         [self setFetchHeaderView:[[ZBTableFetchView alloc] initWithHeaderWithFrame:CGRectMake(0, 0, self.frame.size.width, kZBListLoadViewHeight)]];
-        [self setContentInset:UIEdgeInsetsMake(0, 0, self.edgeInsetBottom, 0)];
+        [self adjustContentInsets:NO];
         [self.fetchHeaderView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
         
         isAttachFetchView = YES;
@@ -442,7 +461,7 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
             }
         }
         
-        CGFloat sInsetTop = anError ? kZBListLoadViewHeight : 0;
+        CGFloat sInsetTop = weakSelf.edgeInsetOriginTop + (anError ?  kZBListLoadViewHeight : 0);
         
         if (sOffsetY < kZBListLoadViewHeight) {
             if (weakSelf.sticksHeaderToTop) {
@@ -531,7 +550,7 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
             }
         }
         
-        CGFloat sInsetBottom = aError ? kZBListLoadViewHeight : 0;
+        CGFloat sInsetBottom = weakSelf.edgeInsetOriginBottom + (aError ? kZBListLoadViewHeight : 0);
         [UIView animateWithDuration:0.2f animations:^{
             if (weakSelf.sticksFooterToBottom) {
                 CGRect sFrame = weakSelf.tableFooterView.frame;
@@ -662,13 +681,14 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
                 [self.tableHeaderView setFrame:sFrame];
             }
             
+            CGFloat edgeInsetTop = self.edgeInsetTop + kZBListLoadViewHeight;
             [UIView animateWithDuration:0.2f animations:^{
                 if (weakSelf.sticksHeaderToTop) {
                     CGRect sFrame = weakSelf.tableHeaderView.frame;
                     sFrame.origin.y = kZBListLoadViewHeight;
                     [weakSelf.tableHeaderView setFrame:sFrame];
                 }
-                [weakSelf setEdgeInsetTop:kZBListLoadViewHeight animated:NO];
+                [weakSelf setEdgeInsetTop:edgeInsetTop animated:NO];
             }];
             
             [self fetchRecent];
@@ -694,13 +714,14 @@ static void *ZBTableViewContentOffsetContext = &ZBTableViewContentOffsetContext;
                 [self.tableFooterView setFrame:sFrame];
             }
             
+            CGFloat edgeInsetBottom = self.edgeInsetBottom + kZBListLoadViewHeight;
             [UIView animateWithDuration:0.2f animations:^{
                 if (weakSelf.sticksFooterToBottom) {
                     CGRect sFrame = weakSelf.tableFooterView.frame;
                     sFrame.origin.y = (weakSelf.contentSize.height - weakSelf.tableFooterView.frame.size.height);
                     [weakSelf.tableFooterView setFrame:sFrame];
                 }
-                [weakSelf setEdgeInsetBottom:kZBListLoadViewHeight animated:NO];
+                [weakSelf setEdgeInsetBottom:edgeInsetBottom animated:NO];
             }];
             
             [self fetchMore];
