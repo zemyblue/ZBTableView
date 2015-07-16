@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ZBTableView"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "Simple tableView that can pull down or pull up refresh."
 # s.description  = "Simple tableView that can pull down or pull up refresh."
   s.license      = { :type => "MIT", :file => "LICENSE" }
